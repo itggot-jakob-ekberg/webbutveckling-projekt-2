@@ -22,7 +22,7 @@ header{
     height: 53.27px;
     width: 61.52px;
     margin: 0;
-    border-bottom-right-radius: 80%;
+    border-bottom-right-radius: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,16 +39,33 @@ figure{
     height: 84px;
     margin: 0;
     grid-area: m2;
-    justify-content: center;
     border-radius: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 p{
     font-size: 13px;
-    margin: 0;
-    text-align: center;
+    margin: 15px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+
+.menubox{
+    width: 203px;
+    height: 61.52px;
+    border-bottom-right-radius: 50px;
+    background-color: #7E2121;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.activate{
+    overflow: hidden;
+    left: 0px;
+    transition: Left 0.33s;
 }

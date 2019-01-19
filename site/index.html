@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header><i class="material-icons">menu</i> </header>
+    <header>
+        <i class="material-icons" onclick="menu1()">menu</i>
+     </header>
+    <div class="menubox">
+            <h1>Menu</h1>
+            <ul>
+                <li>History</li>
+                <li>About</li>
+                <li>Home</li>
+            </ul>
+        </div>
+
         <div class="wrapper">
-            <figure><p>Lär dig om julens origin
+            <figure><p id="starttext">Lär dig om julens origin
                     story. Använd menyn till
                     vänster för att navigera 
                     genom sidan</p></figure>
         </div>
+        <script src="JS/main.js"></script>
 </body>
 </html>
