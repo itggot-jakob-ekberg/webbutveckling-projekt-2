@@ -1,0 +1,7 @@
+meny animation:
+
+röd sak åker till höger och blir en rektangel.(funkar som en låda som saker faller ut ur.)
+två svarta tunna streck åker ner från den röda rektangel saken.
+meny alternativen åker ner en och en med en liten delay mellan varje, Detta blir som en stege.
+
+När man trycker på ett av alternativen åker stegen upp och den röda "lådan" åker 
