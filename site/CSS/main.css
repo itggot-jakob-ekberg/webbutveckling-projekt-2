@@ -167,7 +167,7 @@ img{
 }
 
 .storybox{
-    background-image: url("../img/testbox.png");
+    background-image: url("../img/Webpage-first-image-mobile.gif");
     width: 300px;
     height: 250px;
     grid-area: gl2;
@@ -177,14 +177,17 @@ img{
 #story2{
     grid-area: gl3;
     grid-column: span 3;
+    background-image: url("../img/Webpage-second-mobile.gif");
 }
 #story3{
     grid-area: gl4;
     grid-column: span 3;
+    background-image: url("../img/Webpage-third-mobile.gif");
 }
 #story4{
     grid-area: gl5;
     grid-column: span 3;
+    background-image: url("../img/Webpage-fourth-mobile.png");
 }
 
 
