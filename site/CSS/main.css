@@ -14,6 +14,10 @@ body{
     "l6 m6 r6" ;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 #homewrapper{
     background-color: none;
     background-image: linear-gradient(#40427A, #8F8BA4);
@@ -43,7 +47,7 @@ body{
 
 header{
     background-color: #7E2121;
-    height: 53.27px;
+    height: 53px;
     width: 203px;
     margin: 0;
     border-bottom-right-radius: 40px;
@@ -230,7 +234,6 @@ article{
     top: -10px;
 }
 
-
 a,a:visited{
     color: white;
     text-decoration: none;
@@ -378,7 +381,39 @@ p{
     grid-column: span 0;
 }
 
+
+
+
+
 @media only screen and (min-width: 768px){
+    
+    header{
+        background-color: #7E2121;
+        height: 53px;
+        width: 203px;
+        margin: 0;
+        border-bottom-right-radius: 40px;
+        position: fixed;
+        top: 0;
+        left: -141px;
+        z-index: 10;
+        transition: left 0.1s;
+        transition-delay: 0.1s
+    }
+
+    #hishead{
+        height: 71px;
+        width: 253px;
+    }
+
+    #hishead > i{
+        font-size: 70px;
+    }
+
+    #hislines{
+
+    }
+
     .wrapper{
         height: 100vh;
         width: 100vw;
@@ -422,7 +457,7 @@ p{
         width: 1280px;
         height: 600px;
         position: absolute;
-        bottom: 0;
+        top: 0;
         background-image: url("../img/Treesbunch-desktop.png")
     }
 
@@ -443,9 +478,10 @@ p{
     }
     
     #longwrapper{
-        height: 200vh;
+        height: 400vh;
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:  2.5% 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "A1 B1 C1 D1 E1 "
         "A2 B2 C2 D2 E2 "
@@ -456,7 +492,7 @@ p{
 
     #historyarticle{
         grid-area: C2;
-        height: 1240px;
+        height: 2840px;
         width: 900px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 20px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 100px;
@@ -491,11 +527,12 @@ p{
         grid-area: gl2;
         grid-column: span 3;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-        "q1 q2"
-        "q3 q4" ;
+        "q1 q2 q3"
+        "q4 q5 q6"
+        "q7 q8 q9" ;
     }
 
     #story2{
@@ -517,4 +554,46 @@ p{
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
+
+    .textbox{
+        background-color: rgba(253, 253, 253, 0.5);
+        margin: 13px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    #beskrivning{
+        grid-area: gl1;
+        grid-column: span 2; 
+        margin: 15px;
+        font-size: 1.5em;
+    }
+
+    #uppfinning{
+        grid-area: q1;
+        grid-column: span 0;
+    }
+    
+    #presenter{
+        grid-area: q1;
+        grid-column: span 0;
+    }
+    
+    #kopp{
+        grid-area: q9;
+        grid-column: span 0;
+    }
+    
+    #dod{
+        grid-area: q1;
+        grid-column: span 0;
+    }
+
+    .manipulator{
+        font-size: 1.5em;
+    }
+
 }
