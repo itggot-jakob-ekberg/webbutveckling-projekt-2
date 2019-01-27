@@ -401,19 +401,6 @@ p{
         transition-delay: 0.1s
     }
 
-    #hishead{
-        height: 71px;
-        width: 253px;
-    }
-
-    #hishead > i{
-        font-size: 70px;
-    }
-
-    #hislines{
-
-    }
-
     .wrapper{
         height: 100vh;
         width: 100vw;
@@ -454,11 +441,11 @@ p{
     }
 
     .träd{
-        width: 1280px;
-        height: 600px;
+        width: 1920px;
+        height: 969px;
         position: absolute;
         top: 0;
-        background-image: url("../img/Treesbunch-desktop.png")
+        background-image: url("../img/Treebunchdesktop-big.png")
     }
 
     article{
