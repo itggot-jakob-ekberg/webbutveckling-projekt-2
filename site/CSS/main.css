@@ -101,7 +101,7 @@ figure{
 article{
     background-color: #EAE8FA;
     width: 300px;
-    height: 450px;
+    height: 500px;
     border-radius: 30px;
     justify-self: center;
     grid-area: m2;
@@ -142,7 +142,7 @@ article{
 
 .storyseperator{
     background-color: rgba(90, 90, 90, 0.5) ;
-    width: 300px;
+    width: 100%;
     height: 10px;
     grid-area: sepL1;
     grid-column: span 3;
@@ -160,7 +160,8 @@ article{
     grid-column: span 3;
 }
 
-img{
+.tomte{
+    background-image: url("../img/Tomten-med-hjul-mobile.png");
     width: 120px;
     height: 175px;
     grid-area: gr1;
@@ -169,11 +170,12 @@ img{
     border-radius: 15px;
 }
 
-#träd{
+.träd{
     width: 375px;
     height: 500px;
     position: absolute;
     top: 20%;
+    background-image: url("../img/Trees-bunch-mobile.png")
 
 }
 
@@ -183,6 +185,12 @@ img{
     height: 250px;
     grid-area: gl2;
     grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "q1 q2"
+    "q3 q4" ;
 }
 
 #story2{
@@ -203,7 +211,6 @@ img{
     border-bottom-right-radius: 30px;
 }
 
-
 .texttitle{
     background-color: #EFF8FB;
     width: 145px;
@@ -222,7 +229,6 @@ img{
     left: 5%;
     top: -10px;
 }
-
 
 
 a,a:visited{
@@ -325,8 +331,156 @@ a,a:visited{
 }
 
 p{
-    font-size: 17px;
-    margin: 30px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#abtext{
     grid-area: g1;
     grid-column: span 3;
+    margin: 30px;
+    line-height: 1.5;
+}
+
+#text2{
+    grid-area: m2;
+}
+
+#beskrivning{
+    grid-area: gl1;
+    grid-column: span 2; 
+    margin: 15px;
+}
+
+.textbox{
+    background-color: rgba(253, 253, 253, 0.5);
+    margin: 13px;
+    border-radius: 10px;
+}
+
+#uppfinning{
+    grid-area: q1;
+    grid-column: span 0;
+}
+
+#presenter{
+    grid-area: q1;
+    grid-column: span 0;
+}
+
+#kopp{
+    grid-area: q4;
+    grid-column: span 0;
+}
+
+#dod{
+    grid-area: q1;
+    grid-column: span 0;
+}
+
+@media only screen and (min-width: 768px){
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "A1 B1 C1 D1 E1 "
+        "A2 B2 C2 D2 E2 "
+        "A3 B3 C3 D3 E3 "
+        "A4 B4 C4 D4 E4 " ;
+    }
+
+    #homewrapper{
+        width: 100vw;
+        background-color: none;
+        background-image: linear-gradient(#40427A, #8F8BA4);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "A1 B1 C1 D1 E1 "
+        "A2 B2 C2 D2 E2 "
+        "A3 B3 C3 D3 E3 "
+        "A4 B4 C4 D4 E4 "
+        "A5 B5 C5 D5 E5" ;
+    }
+
+    figure{
+        width: 100%;
+        height: 90%;
+        grid-area: C2;
+    }
+
+    #starttext{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .träd{
+        width: 1280px;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        background-image: url("../img/Treesbunch-desktop.png")
+    }
+
+    article{
+        width: 800px;
+        height: 400px;
+        grid-area: C2;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "title title2 title3"
+        "g1 g2 g3"
+        "g4 g5 g6"
+        "g7 g8 g9"
+        "g10 g11 g12" ;
+    }
+    
+    #longwrapper{
+        height: 200vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "A1 B1 C1 D1 E1 "
+        "A2 B2 C2 D2 E2 "
+        "A3 B3 C3 D3 E3 "
+        "A4 B4 C4 D4 E4 "
+        "A5 B5 C5 D5 E5" ;
+    }
+
+    #historyarticle{
+        grid-area: C2;
+        height: 1240px;
+        width: 900px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 100px;
+        grid-template-areas:
+        "title title2 title3"
+        "gl1 gm1 gr1"
+        "sepL1 sepM1 sepR1"
+        "gl2 gm2 gr2"
+        "sepL2 sepM2 sepR2"
+        "gl3 gm3 gr3"
+        "sepL3 sepM3 sepR3"
+        "gl4 gm4 gr4"
+        "sepL4 sepm4 sepR4"
+        "gl5 gm5 gr5"
+        "freespace1 freespace2 freespace3 " ;
+    }
+
+    .tomte{
+        background-image: url("../img/Tomten-med-hjul-desktop.png");
+        width: 300px;
+        height: 375px;
+        grid-area: gr1;
+        position: relative;
+        top: -50px;
+        border-radius: 15px;
+    }
 }
